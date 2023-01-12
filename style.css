@@ -1,0 +1,56 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body,
+html {
+  box-sizing: content-box;
+}
+
+.container-fluid {
+  height: 650px;
+  width: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  transition: ease-out 0.4s;
+  font-family: "Orbitron", sans-serif;
+}
+
+.display {
+  height: 60px;
+}
+
+.keypad {
+  width: 100%;
+}
+
+.col-12 {
+  display: flex;
+  gap: 1em;
+}
+
+.col-12 .btn {
+  background-color: #ececec;
+  box-shadow: 0px 0px 6px -1px rgba(0, 0, 0, 0.75);
+}
+
+#indicator {
+  position: absolute;
+  top: 0;
+  background-color: black;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.active {
+  transition: 0.3s;
+  left: 50%;
+}
+
+.icon {
+  color: orange;
+}
